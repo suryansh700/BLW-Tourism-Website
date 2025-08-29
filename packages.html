@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tour Packages - Explore India</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #abaeae;
+    }
+    .packages-header {
+      background: url('images/tour-banner.jpg') center/cover no-repeat;
+      padding: 100px 20px;
+      color: #121010;
+      text-align: center;
+      background-attachment: fixed;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    }
+    .packages-header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      animation: fadeInDown 1.5s ease;
+    }
+    .packages-header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .card {
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+    .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    .card img {
+      height: 220px;
+      object-fit: cover;
+    }
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+    .btn-book {
+      background-color: #0d6efd;
+      color: white;
+      border-radius: 30px;
+      padding: 8px 20px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    .btn-book:hover {
+      background-color: #084ec3;
+    }
+    .card-text small {
+      display: block;
+      margin-top: 8px;
+      color: #666;
+    }
+    .footer {
+      background: #20232a;
+      color: #fff;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="packages-header position-relative d-flex align-items-center justify-content-center text-white text-center">
+  <div class="overlay"></div>
+  <div class="container position-relative z-2">
+    <h1 class="display-4 fw-bold animate__animated animate__fadeInDown">🌏 Explore Our Tour Packages</h1>
+    <p class="lead mb-4 animate__animated animate__fadeInUp animate__delay-1s">
+      ✈️ Curated experiences to discover the beauty of India
+    </p>
+    </a>
+  </div>
+</header>
+
+  <!-- Package Cards -->
+  <div class="container my-5">
+    <div class="row g-4">
+
+      <!-- Package Card -->
+      <div class="col-md-4">
+        <div class="card">
+          <a href="all-itineraries.html#goa"><img src="images/goa.jpg" class="card-img-top" alt="Goa Beach Tour"></a>
+          <div class="card-body">
+            <h5 class="card-title">Goa Beach Tour</h5>
+            <p class="card-text">Enjoy the sunny beaches and vibrant nightlife. <br><small><i class="bi bi-calendar-event"></i> 5 Days | ₹15,000</small></p>
+            <a href="booking.html" class="btn btn-book">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kerala -->
+      <div class="col-md-4">
+        <div class="card">
+          <a href="all-itineraries.html#kerala"><img src="images/kerala.jpg" class="card-img-top" alt="Kerala"></a>
+          <div class="card-body">
+            <h5 class="card-title">Kerala Backwaters</h5>
+            <p class="card-text">Cruise through serene backwaters in houseboats. <br><small><i class="bi bi-calendar-event"></i> 6 Days | ₹18,000</small></p>
+            <a href="booking.html" class="btn btn-book">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Himachal -->
+      <div class="col-md-4">
+        <div class="card">
+          <a href="all-itineraries.html#himachal"><img src="images/himachal.jpg" class="card-img-top" alt="Himachal"></a>
+          <div class="card-body">
+            <h5 class="card-title">Himachal Hills</h5>
+            <p class="card-text">Explore snowy mountains and charming towns. <br><small><i class="bi bi-calendar-event"></i> 7 Days | ₹20,000</small></p>
+            <a href="booking.html" class="btn btn-book">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rajasthan -->
+      <div class="col-md-4">
+        <div class="card">
+          <a href="all-itineraries.html#rajasthan"><img src="images/rajasthan.jpg" class="card-img-top" alt="Rajasthan"></a>
+          <div class="card-body">
+            <h5 class="card-title">Rajasthan Forts</h5>
+            <p class="card-text">Visit majestic forts and desert safaris. <br><small><i class="bi bi-calendar-event"></i> 6 Days | ₹17,000</small></p>
+            <a href="booking.html" class="btn btn-book">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- North East -->
+      <div class="col-md-4">
+        <div class="card">
+          <a href="all-itineraries.html#northeast"><img src="images/northeast.jpg" class="card-img-top" alt="North East"></a>
+          <div class="card-body">
+            <h5 class="card-title">Northeast Wonders</h5>
+            <p class="card-text">Uncover the unexplored hills and cultures. <br><small><i class="bi bi-calendar-event"></i> 7 Days | ₹22,000</small></p>
+            <a href="booking.html" class="btn btn-book">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kashmir -->
+      <div class="col-md-4">
+        <div class="card">
+          <a href="all-itineraries.html#kashmir"><img src="images/kashmir.jpg" class="card-img-top" alt="Kashmir"></a>
+          <div class="card-body">
+            <h5 class="card-title">Kashmir Paradise</h5>
+            <p class="card-text">Experience snow and shikara rides. <br><small><i class="bi bi-calendar-event"></i> 6 Days | ₹22,000</small></p>
+            <a href="booking.html" class="btn btn-book">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    &copy; 2025 IRCTC Tourism. All rights reserved.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

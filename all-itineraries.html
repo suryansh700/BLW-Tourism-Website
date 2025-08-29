@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>All Tour Itineraries</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to right, #f9f9f9, #e0f7fa);
+    }
+
+    .section-header {
+      background-color: #0097a7;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+
+    .itinerary-section {
+      display: none;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      margin-bottom: 40px;
+    }
+
+    .itinerary-section img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      padding-left: 0;
+      list-style: none;
+    }
+
+    ul li {
+      padding: 10px;
+      margin-bottom: 10px;
+      border-left: 5px solid #0097a7;
+      background: #f1fdfd;
+      border-radius: 6px;
+      position: relative;
+      padding-left: 45px;
+      font-size: 16px;
+    }
+
+    ul li::before {
+      content: "📅";
+      position: absolute;
+      left: 15px;
+      top: 10px;
+      font-size: 20px;
+    }
+
+    .book-btn {
+      margin-top: 20px;
+    }
+
+    .book-btn a {
+      background: #00796b;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .book-btn a:hover {
+      background-color: #004d40;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-4">
+    <div class="section-header">
+      <h2>Tour Itinerary</h2>
+    </div>
+
+    <div id="goa" class="itinerary-section">
+      <img src="images/goa.jpg" alt="Goa Image">
+      <h3>Goa Beach Delight</h3>
+      <p><strong>Duration:</strong> 4 Nights / 5 Days</p>
+      <ul>
+        <li>Day 1: Arrival and leisure at beach resort</li>
+        <li>Day 2: North Goa sightseeing (Baga, Anjuna)</li>
+        <li>Day 3: South Goa tour (Miramar, Basilica)</li>
+        <li>Day 4: Leisure day and water sports</li>
+        <li>Day 5: Check-out and departure</li>
+      </ul>
+      <div class="book-btn"><a href="booking.html">Book Now</a></div>
+    </div>
+
+    <div id="kerala" class="itinerary-section">
+      <img src="images/kerala.jpg" alt="Kerala Image">
+      <h3>Kerala Backwater</h3>
+      <p><strong>Duration:</strong> 5 Nights / 6 Days</p>
+      <ul>
+        <li>Day 1: Arrival in Kochi</li>
+        <li>Day 2: Munnar sightseeing</li>
+        <li>Day 3: Thekkady and Periyar wildlife</li>
+        <li>Day 4: Houseboat stay in Alleppey</li>
+        <li>Day 5: Beach time in Kovalam</li>
+        <li>Day 6: Departure</li>
+      </ul>
+      <div class="book-btn"><a href="booking.html">Book Now</a></div>
+    </div>
+
+    <div id="himachal" class="itinerary-section">
+      <img src="images/himachal.jpg" alt="Himachal Image">
+      <h3>Himachal Hills</h3>
+      <p><strong>Duration:</strong> 6 Nights / 7 Days</p>
+      <ul>
+        <li>Day 1: Delhi to Shimla</li>
+        <li>Day 2: Shimla sightseeing</li>
+        <li>Day 3: Shimla to Manali</li>
+        <li>Day 4: Manali local tour</li>
+        <li>Day 5: Solang Valley or Rohtang Pass</li>
+        <li>Day 6: Manali to Delhi</li>
+        <li>Day 7: Departure</li>
+      </ul>
+      <div class="book-btn"><a href="booking.html">Book Now</a></div>
+    </div>
+
+    <div id="rajasthan" class="itinerary-section">
+      <img src="images/rajasthan.jpg" alt="Rajasthan Image">
+      <h3>Rajasthan Fort</h3>
+      <p><strong>Duration:</strong> 5 Nights / 6 Days</p>
+      <ul>
+        <li>Day 1: Arrival in Jaipur</li>
+        <li>Day 2: Jaipur sightseeing</li>
+        <li>Day 3: Jaipur to Jodhpur</li>
+        <li>Day 4: Jodhpur to Udaipur</li>
+        <li>Day 5: Udaipur city tour</li>
+        <li>Day 6: Departure</li>
+      </ul>
+      <div class="book-btn"><a href="booking.html">Book Now</a></div>
+    </div>
+
+    <div id="northeast" class="itinerary-section">
+      <img src="images/northeast.jpg" alt="Northeast Image">
+      <h3>Northeast Wonders</h3>
+      <p><strong>Duration:</strong> 6 Nights / 7 Days</p>
+      <ul>
+        <li>Day 1: Arrival in Guwahati</li>
+        <li>Day 2: Shillong exploration</li>
+        <li>Day 3: Cherrapunjee waterfalls</li>
+        <li>Day 4: Mawlynnong village</li>
+        <li>Day 5: Dawki river trip</li>
+        <li>Day 6: Return to Guwahati</li>
+        <li>Day 7: Departure</li>
+      </ul>
+      <div class="book-btn"><a href="booking.html">Book Now</a></div>
+    </div>
+
+    <div id="kashmir" class="itinerary-section">
+      <img src="images/kashmir.jpg" alt="Kashmir Image">
+      <h3>Kashmir Paradise</h3>
+      <p><strong>Duration:</strong> 5 Nights / 6 Days</p>
+      <ul>
+        <li>Day 1: Arrival in Srinagar</li>
+        <li>Day 2: Gulmarg day trip</li>
+        <li>Day 3: Pahalgam valley tour</li>
+        <li>Day 4: Sonmarg excursion</li>
+        <li>Day 5: Houseboat stay</li>
+        <li>Day 6: Departure</li>
+      </ul>
+      <div class="book-btn"><a href="booking.html">Book Now</a></div>
+    </div>
+  </div>
+
+  <script>
+    function showItinerary(id) {
+      const sections = document.querySelectorAll('.itinerary-section');
+      sections.forEach(section => section.style.display = 'none');
+      const target = document.getElementById(id);
+      if (target) {
+        target.style.display = 'block';
+        window.scrollTo({ top: target.offsetTop - 100, behavior: 'smooth' });
+      }
+    }
+
+    window.onload = function () {
+      const hash = window.location.hash.substring(1);
+      if (hash) {
+        showItinerary(hash);
+      }
+    };
+  </script>
+</body>
+</html>
